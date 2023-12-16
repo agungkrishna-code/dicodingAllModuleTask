@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf</title>
+  <link rel="icon" type="image/png" href="/assets/img/book-stack.png" sizes="32x32">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header_bar">
+  <h1 class="title">Bookshelf Apps</h1>
+  <p class="titleDesc">📖📖📖</p>
+</header>
+<main>
+  <section class="sectionInput">
+    <div class="titleSection">
+      <h2>Buku Baru</h2>
+    </div>
+    <div class="squareBorder">
+      <form id="inputBookForm">
+        <div class="input">
+          <label for="inputBookTitle">Judul</label>
+          <input id="inputBookTitle" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis</label>
+          <input id="inputBookAuthor" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun</label>
+          <input id="inputBookYear" type="number" required>
+        </div>
+        <div class="inputInline">
+          <input id="inputBookIsComplete" type="checkbox">
+          <label for="inputBookIsComplete">Selesai Dibaca</label>
+        </div>
+        <button id="bookSubmit" type="submit">Kirim</button>
+      </form>
+    </div>
+  </section>
+  <section class="searchSection">
+    <div class="titleSection">
+      <h2>Cari Buku</h2>
+    </div>
+    <div class="squareBorder">
+      <p>Kata Kunci</p>
+      <form id="searchBookForm">
+        <input id="searchBookTitle" type="text">
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </div>
+  </section>
+  <section class="bookShelf">
+    <div class="titleSection">
+      <h2>Belum Selesai Dibaca</h2>
+    </div>
+    <div class="squareBorder">
+      <div id="incompleteBookshelfList" class="book_list">
+        
+      </div>
+    </div>
+  </section>
+  <section class="bookShelf">
+    <div class="titleSection">
+      <h2>Selesai Dibaca</h2>
+    </div>
+    <div class="squareBorder">
+      <div id="completeBookshelfList" class="book_list">
+        
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

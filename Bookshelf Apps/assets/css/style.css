@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input,
+button {
+    font-size: 15px;
+}
+
+.header_bar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #112D4E;
+    color: white;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section {
+    width: 50vw;
+    border-radius: 20px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(94,45,253,1) 100%);
+}
+
+.titleSection {
+    background-color: #3F72AF;
+    padding: 10px;
+    border-top-right-radius: 15px;	
+    border-top-left-radius: 15px;
+}
+
+.squareBorder {
+    margin: 20px;
+}
+
+.sectionInput {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.titleSection h2 {
+    text-align: center;
+    color: white;
+}
+
+.sectionInput .squareBorder form .input {
+    margin: 10px 0;
+}
+
+.sectionInput .squareBorder form button {
+    background-color: #112D4E;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    float: right;
+    display: block;
+    width: 30%;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sectionInput .squareBorder form .input input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: #112D4E;
+    background-color: #E5CFF7;
+}
+
+.sectionInput .squareBorder form .input label {
+    color: white;
+    font-weight: bold;
+}
+
+.sectionInput .squareBorder form .inputInline {
+    margin: 12px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sectionInput .squareBorder form .inputInline label {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.searchSection form {
+    display: grid;
+    grid-template-columns: auto 0.2fr 0fr;
+    grid-gap: 10px;
+}
+
+.searchSection form label {
+    display: flex;
+    align-items: center;
+}
+
+.searchSection p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.searchSection form input {
+    padding: 8px;
+    background-color: #E5CFF7;
+    border: #E5CFF7;
+    border-radius: 20px;
+}
+
+.searchSection form button {
+    background-color: #112D4E;
+    font-weight: bold;
+    color: white;
+    border: #E5CFF7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #112D4E;
+    padding: 20px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .header_bar {
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .sectionInput .squareBorder form button {
+        width: 50%;
+    }
+
+    .searchSection form {
+        grid-template-columns: auto 1fr;
+    }
+
+    .searchSection p {
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header_bar {
+        padding: 25px;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .searchSection form input {
+        width: 100%;
+    }
+
+    .searchSection form button {
+        width: 20vw;
+    }
+}
